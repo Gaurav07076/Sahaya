@@ -9,23 +9,23 @@
 		<title>SAHAYA</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="{{url_for('static',filename='../static/css/main.css')}}" />
 	</head>
 	<body class="subpage">
 
 		<!-- Header -->
 			<header id="header">
-				<div class="logo"><a href="index.html">SAHAYA</a></div>
+				<div class="logo"><a href="{{url_for('index')}}">SAHAYA</a></div>
 				<a href="#menu" class="toggle"><span>Menu</span></a>
 			</header>
 
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">Homepage</a></li>
-					<li><a href="generic.html"> Donation Centres near you</a></li>
-					<li><a href="elements.html">Connect With Artisans</a></li>
-					<li><a href="fifth.html">Contact Us</a></li>
+					<li><a href="{{url_for('index')}}">Homepage</a></li>
+					<li><a href="{{url_for('generic')}}"> Donation Centres near you</a></li>
+					<li><a href="{{url_for('elements')}}">Connect With Artisans</a></li>
+					<li><a href="{{url_for('fifth')}}">Contact Us</a></li>
 				</ul>
 			</nav>
 
